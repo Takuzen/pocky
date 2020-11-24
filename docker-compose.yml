@@ -1,0 +1,13 @@
+version: "3"
+services:
+  front:
+    container_name: pocky-hp-front
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    command: sh -c "cd /front/core && yarn dev"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./front:/front
+    tty: true
