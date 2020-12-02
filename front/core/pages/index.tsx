@@ -11,7 +11,7 @@ const IndexPage = () => (
           <InstagramIcon>
             <Link href="https://www.instagram.com/denimyarou/?hl=pa">
               <Image
-                src="/../static/logo-instagram.svg"
+                src="/logo-instagram.svg"
                 alt="logo-instagram"
                 width={30}
                 height={30}
@@ -21,7 +21,7 @@ const IndexPage = () => (
           <FacebookIcon>
             <Link href="https://www.facebook.com/Pocky-SALON-STORE-109583650939677/">
               <Image
-                src="/../static/logo-facebook.svg"
+                src="/logo-facebook.svg"
                 alt="logo-facebook"
                 width={30}
                 height={30}
@@ -36,7 +36,7 @@ const IndexPage = () => (
           <StoreGenre>SALON & STORE </StoreGenre>
         </StoreInfo>
         <Image
-          src="/../static/chevron-down-outline.svg"
+          src="/chevron-down-outline.svg"
           alt="chevron-down"
           width={50}
           height={50}
