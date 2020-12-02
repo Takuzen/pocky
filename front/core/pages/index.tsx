@@ -140,13 +140,9 @@ const StoreName = styled.p`
   font-family: 'Sansita Swashed', cursive;
   font-size: 100px;
   text-align: center;
-
-  transition-delay: 1s;
 `
 
 const StoreGenre = styled.p`
   text-align: center;
   font-weight: bold;
-
-  transition-delay: 3s;
 `
