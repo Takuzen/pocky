@@ -12,7 +12,7 @@ const IndexPage = () => (
             <Link href="https://www.instagram.com/denimyarou/?hl=pa">
               <Image
                 src="/../static/logo-instagram.svg"
-                alt="chevron-down"
+                alt="logo-instagram"
                 width={30}
                 height={30}
               />
@@ -22,7 +22,7 @@ const IndexPage = () => (
             <Link href="https://www.facebook.com/Pocky-SALON-STORE-109583650939677/">
               <Image
                 src="/../static/logo-facebook.svg"
-                alt="chevron-down"
+                alt="logo-facebook"
                 width={30}
                 height={30}
               />
