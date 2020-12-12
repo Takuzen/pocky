@@ -35,12 +35,14 @@ const IndexPage = () => (
           <StoreName>Pocky</StoreName>
           <StoreGenre>SALON & STORE </StoreGenre>
         </StoreInfo>
+        {/*
         <Image
           src="/chevron-down-outline.svg"
           alt="chevron-down"
           width={50}
           height={50}
         />
+        */}
       </CenterPanel>
       <RightPanel>
         <YoyakuBtn>
@@ -59,7 +61,7 @@ const IndexPage = () => (
 export default IndexPage
 
 const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: grid;
   grid-template-columns: 20% 60% 20%;
