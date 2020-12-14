@@ -2,7 +2,6 @@ import Layout from '../components/Layout'
 import styled from 'styled-components'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useMediaQuery } from 'react-responsive'
 
 const IndexPage = () => (
   <Layout title="Pocky Home">
@@ -64,6 +63,7 @@ export default IndexPage
 const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 20% 60% 20%;
 `
