@@ -2,6 +2,7 @@ import Layout from '../components/Layout'
 import styled from 'styled-components'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useMediaQuery } from 'react-responsive'
 
 const IndexPage = () => (
   <Layout title="Pocky Home">
@@ -102,7 +103,36 @@ const CenterPanel = styled.section`
 `
 
 const StoreInfo = styled.div`
+  width: 100%;
   line-height: 2;
+`
+
+const StoreName = styled.p`
+  @media screen and (max-width: 300px) {
+    @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap');
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 65px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 301px) and (max-width: 788px) {
+    @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap');
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 789px) {
+    @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap');
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 100px;
+    text-align: center;
+  }
+`
+
+const StoreGenre = styled.p`
+  text-align: center;
+  font-weight: bold;
 `
 
 const RightPanel = styled.section`
@@ -135,16 +165,4 @@ const YoyakuKasen = styled.hr`
   background: tomato;
   border: none;
   border-radius: 10px;
-`
-
-const StoreName = styled.p`
-  @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap');
-  font-family: 'Sansita Swashed', cursive;
-  font-size: 100px;
-  text-align: center;
-`
-
-const StoreGenre = styled.p`
-  text-align: center;
-  font-weight: bold;
 `
