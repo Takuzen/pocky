@@ -32,7 +32,7 @@ const IndexPage = () => (
       </LeftPanel>
       <CenterPanel>
         <Image
-          src="/logo-facebook.svg"
+          src="/pocky-logo.jpg"
           alt="pocky-logo"
           width={200}
           height={200}
