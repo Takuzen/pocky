@@ -34,8 +34,8 @@ const IndexPage = () => (
         <Image
           src="/pocky-logo.jpg"
           alt="pocky-logo"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
         {/*
         <Image
@@ -99,7 +99,6 @@ const InstagramIcon = styled.div`
 
 const CenterPanel = styled.section`
   display: grid;
-  grid-template-rows: 85% 15%;
   justify-items: center;
   align-items: center;
 `
