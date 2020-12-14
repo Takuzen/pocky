@@ -62,7 +62,7 @@ export default IndexPage
 
 const Wrapper = styled.div`
   width: 100%;
-  height: calc(100vh - 60px);
+  height: 90vh;
   overflow: hidden;
   display: grid;
   grid-template-columns: 20% 60% 20%;
