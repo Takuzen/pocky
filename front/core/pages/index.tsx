@@ -28,6 +28,16 @@ const IndexPage = () => (
               />
             </Link>
           </FacebookIcon>
+          <StoreIcon>
+            <Link href="https://pocky2020.base.ec/">
+              <Image
+                src="/store-icon.svg"
+                alt="store-icon"
+                width={30}
+                height={30}
+              />
+            </Link>
+          </StoreIcon>
         </SocialMediaIcons>
       </LeftPanel>
       <CenterPanel>
@@ -79,7 +89,9 @@ const SocialMediaIcons = styled.div`
   margin: 30px 0 0 2vw;
 `
 
-const FacebookIcon = styled.div`
+const InstagramIcon = styled.div`
+  margin-bottom: 15px;
+
   :hover {
     cursor: pointer;
     opacity: 0.6;
@@ -87,8 +99,19 @@ const FacebookIcon = styled.div`
   }
 `
 
-const InstagramIcon = styled.div`
-  margin-bottom: 15px;
+const FacebookIcon = styled.div`
+  margin-bottom: 18px;
+
+  :hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+`
+
+const StoreIcon = styled.div`
+  width: 28px;
+  margin-left: 1px;
 
   :hover {
     cursor: pointer;
