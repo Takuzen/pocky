@@ -11,7 +11,7 @@ const IndexPage = () => (
           <Reservation>
             <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
               <Image
-                src="/cut-outline.svg"
+                src="/icons/cut-outline.svg"
                 alt="cut-icon"
                 width={30}
                 height={30}
@@ -24,7 +24,7 @@ const IndexPage = () => (
           <OnlineStore>
             <Link href="https://pocky2020.base.ec/">
               <Image
-                src="/store-icon.svg"
+                src="/icons/store-icon.svg"
                 alt="store-icon"
                 width={30}
                 height={30}
@@ -37,7 +37,7 @@ const IndexPage = () => (
           <Instagram>
             <Link href="https://www.instagram.com/denimyarou/?hl=en">
               <Image
-                src="/logo-instagram.svg"
+                src="/icons/logo-instagram.svg"
                 alt="instagram-icon"
                 width={30}
                 height={30}
@@ -51,7 +51,7 @@ const IndexPage = () => (
         <Logo>
           <PockyLogo>
             <Image
-              src="/pocky-logo.jpg"
+              src="/images/pocky-logo.jpg"
               alt="pocky-logo"
               width={500}
               height={500}
@@ -59,7 +59,7 @@ const IndexPage = () => (
           </PockyLogo>
           <ChevronIcon>
             <Image
-              src="/chevron-down-outline.svg"
+              src="/icons/chevron-down-outline.svg"
               alt="chevron-down-icon"
               width={50}
               height={50}
