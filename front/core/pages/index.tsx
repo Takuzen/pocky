@@ -4,156 +4,161 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const IndexPage = () => (
-  <Layout title="Pocky Home">
+  <Layout title="Pocky SALON & STORE">
     <Wrapper>
-      <LeftPanel>
-        <SocialMediaIcons>
-          <InstagramIcon>
-            <Link href="https://www.instagram.com/denimyarou/?hl=pa">
+      <TopSection>
+        <Menu>
+          <Reservation>
+            <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
               <Image
-                src="/logo-instagram.svg"
-                alt="logo-instagram"
+                src="/cut-outline.svg"
+                alt="cut-icon"
                 width={30}
                 height={30}
-              />
+              ></Image>
             </Link>
-          </InstagramIcon>
-          <FacebookIcon>
-            <Link href="https://www.facebook.com/Pocky-SALON-STORE-109583650939677/">
-              <Image
-                src="/logo-facebook.svg"
-                alt="logo-facebook"
-                width={30}
-                height={30}
-              />
+            <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
+              <p>Reservation</p>
             </Link>
-          </FacebookIcon>
-          <StoreIcon>
+          </Reservation>
+          <OnlineStore>
             <Link href="https://pocky2020.base.ec/">
               <Image
                 src="/store-icon.svg"
                 alt="store-icon"
                 width={30}
                 height={30}
-              />
+              ></Image>
             </Link>
-          </StoreIcon>
-        </SocialMediaIcons>
-      </LeftPanel>
-      <CenterPanel>
-        <Image
-          src="/pocky-logo.jpg"
-          alt="pocky-logo"
-          width={500}
-          height={500}
-        />
-        {/*
-        <Image
-          src="/chevron-down-outline.svg"
-          alt="chevron-down"
-          width={50}
-          height={50}
-        />
-        */}
-      </CenterPanel>
-      <RightPanel>
-        <YoyakuBtn>
-          <YoyakuText>
-            <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
-              予約はこちらから
+            <Link href="https://pocky2020.base.ec/">
+              <p>Online Store</p>
             </Link>
-          </YoyakuText>
-          <YoyakuKasen></YoyakuKasen>
-        </YoyakuBtn>
-      </RightPanel>
+          </OnlineStore>
+          <Instagram>
+            <Link href="https://www.instagram.com/denimyarou/?hl=en">
+              <Image
+                src="/logo-instagram.svg"
+                alt="instagram-icon"
+                width={30}
+                height={30}
+              ></Image>
+            </Link>
+            <Link href="https://www.instagram.com/denimyarou/?hl=en">
+              <p>Instagram</p>
+            </Link>
+          </Instagram>
+        </Menu>
+        <Logo>
+          <PockyLogo>
+            <Image
+              src="/pocky-logo.jpg"
+              alt="pocky-logo"
+              width={500}
+              height={500}
+            ></Image>
+          </PockyLogo>
+          <ChevronIcon>
+            <Image
+              src="/chevron-down-outline.svg"
+              alt="chevron-down-icon"
+              width={50}
+              height={50}
+            ></Image>
+          </ChevronIcon>
+        </Logo>
+      </TopSection>
+      <PhotoSection></PhotoSection>
+      <AboutSection></AboutSection>
+      <MapSection></MapSection>
     </Wrapper>
   </Layout>
 )
 
 export default IndexPage
 
-const Wrapper = styled.div`
-  width: 100%;
+const Wrapper = styled.div``
+
+const TopSection = styled.section`
   height: 100vh;
-  overflow: hidden;
+  width: 100vw;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
-`
-const LeftPanel = styled.section``
-
-const SocialMediaIcons = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 30px 0 0 2vw;
+  grid-template-rows: 20% 80%;
 `
 
-const InstagramIcon = styled.div`
-  margin-bottom: 15px;
-
-  :hover {
-    cursor: pointer;
-    opacity: 0.6;
-    transition: 0.3s;
-  }
-`
-
-const FacebookIcon = styled.div`
-  margin-bottom: 18px;
-
-  :hover {
-    cursor: pointer;
-    opacity: 0.6;
-    transition: 0.3s;
-  }
-`
-
-const StoreIcon = styled.div`
-  width: 28px;
-  margin-left: 1px;
-
-  :hover {
-    cursor: pointer;
-    opacity: 0.6;
-    transition: 0.3s;
-  }
-`
-
-const CenterPanel = styled.section`
+const Menu = styled.div`
   display: grid;
+  grid-template-columns: [tate0] 90% [tate1] 10% [tate2];
+  grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr;
   justify-items: center;
   align-items: center;
 `
 
-const RightPanel = styled.section`
+const Reservation = styled.div`
+  grid-column-start: tate1;
+  grid-row-start: yoko0;
   display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: flex-end;
-`
-
-const YoyakuBtn = styled.div`
-  margin: 30px 2vw 0 0;
-`
-
-const YoyakuText = styled.p`
-  font-size: 15px;
-  letter-spacing: 1px;
-  white-space: nowrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Poppins', sans-serif;
 
   :hover {
-    cursor: pointer;
     opacity: 0.6;
+    cursor: pointer;
     transition: 0.3s;
   }
 `
 
-const YoyakuKasen = styled.hr`
-  margin: 5px 0 0 0;
-  width: 118px;
-  height: 3px;
-  background: tomato;
-  border: none;
-  border-radius: 10px;
+const OnlineStore = styled.div`
+  grid-column-start: tate1;
+  grid-row-start: yoko1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Poppins', sans-serif;
+
+  :hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 `
+
+const Instagram = styled.div`
+  grid-column-start: tate1;
+  grid-row-start: yoko2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Poppins', sans-serif;
+
+  :hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+`
+
+const Logo = styled.div`
+  display: grid;
+  grid-template-rows: 80% 20%;
+  justify-items: center;
+`
+
+const PockyLogo = styled.image``
+
+const ChevronIcon = styled.image``
+
+const PhotoSection = styled.section`
+  height: 100vh;
+  width: 100vw;
+`
+
+const AboutSection = styled.section`
+  height: 100vh;
+  width: 100vw;
+`
+
+const MapSection = styled.section``
