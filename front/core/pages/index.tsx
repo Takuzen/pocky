@@ -3,6 +3,22 @@ import styled from 'styled-components'
 import Image from 'next/image'
 import Link from 'next/link'
 
+const AddressMap = () => {
+  return (
+    <div className="google-map-code">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.92161076721!2d139.7088684!3d35.6713284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xebee27411fb235b0!2sPocky%20SALON%20%26%20STORE!5e0!3m2!1sen!2sjp!4v1608901241643!5m2!1sen!2sjp"
+        width="600"
+        height="450"
+        style={{ border: 0 }}
+        aria-hidden="false"
+      ></iframe>
+    </div>
+  )
+}
+
+export { AddressMap }
+
 const IndexPage = () => (
   <Layout title="Pocky SALON & STORE">
     <Wrapper>
@@ -51,7 +67,7 @@ const IndexPage = () => (
         <Logo>
           <PockyLogo>
             <Image
-              src="/images/pocky-logo.jpg"
+              src="/images/pocky-logo.png"
               alt="pocky-logo"
               width={500}
               height={500}
@@ -67,9 +83,38 @@ const IndexPage = () => (
           </ChevronIcon>
         </Logo>
       </TopSection>
-      <PhotoSection></PhotoSection>
-      <AboutSection></AboutSection>
-      <MapSection></MapSection>
+      <PhotoSection>
+        <PhotoWrapper>
+          <Image
+            src="/images/front.png"
+            alt="front-image"
+            width={700}
+            height={500}
+          ></Image>
+        </PhotoWrapper>
+      </PhotoSection>
+      <MapSection>
+        <Image
+          src="/images/welcome.jpg"
+          alt="welcome-message"
+          width={700}
+          height={300}
+        ></Image>
+        <AddressMap></AddressMap>
+        <Info>
+          〒150-0001
+          <br />
+          東京都渋谷区神宮前3丁目27-14
+          <br />
+          Owner Hiromu Yamada（山田大夢）
+          <br />
+          denimyarou@gmail.com
+          <br />
+          03-6447-4030
+          <br />
+          OPEN 11:00 - 21:00
+        </Info>
+      </MapSection>
     </Wrapper>
   </Layout>
 )
@@ -154,11 +199,23 @@ const ChevronIcon = styled.image``
 const PhotoSection = styled.section`
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
-const AboutSection = styled.section`
+const PhotoWrapper = styled.div``
+
+const MapSection = styled.section`
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 `
 
-const MapSection = styled.section``
+const Info = styled.p`
+  text-align: center;
+  line-height: 2;
+`
