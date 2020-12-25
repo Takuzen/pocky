@@ -67,7 +67,7 @@ const IndexPage = () => (
         <Logo>
           <PockyLogo>
             <Image
-              src="/images/pocky-logo.png"
+              src="/images/pocky-logo.jpg"
               alt="pocky-logo"
               width={500}
               height={500}
@@ -86,7 +86,7 @@ const IndexPage = () => (
       <PhotoSection>
         <PhotoWrapper>
           <Image
-            src="/images/front.png"
+            src="/images/front.jpg"
             alt="front-image"
             width={700}
             height={500}
