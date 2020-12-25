@@ -86,7 +86,7 @@ const IndexPage = () => (
       <PhotoSection>
         <PhotoWrapper>
           <Image
-            src="/images/front.jpg"
+            src="/images/front.JPG"
             alt="front-image"
             width={700}
             height={500}
