@@ -94,12 +94,14 @@ const IndexPage = () => (
         </PhotoWrapper>
       </PhotoSection>
       <MapSection>
-        <Image
-          src="/images/welcome-resized.jpg"
-          alt="welcome-message"
-          width={700}
-          height={300}
-        ></Image>
+        <WelcomeImage>
+          <Image
+            src="/images/welcome-resized.jpg"
+            alt="welcome-image"
+            width={700}
+            height={300}
+          ></Image>
+        </WelcomeImage>
         <AddressMap></AddressMap>
         <Info>
           〒150-0001
@@ -213,6 +215,9 @@ const MapSection = styled.section`
   flex-direction: column;
   justify-items: center;
   align-items: center;
+`
+const WelcomeImage = styled.div`
+  object-fit: fill;
 `
 
 const Info = styled.p`
