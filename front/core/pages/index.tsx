@@ -209,18 +209,21 @@ const PhotoSection = styled.section`
 const PhotoWrapper = styled.div``
 
 const MapSection = styled.section`
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
 `
 const WelcomeImage = styled.div`
-  object-fit: fill;
+  object-fit: cover;
 `
 
 const Info = styled.p`
   text-align: center;
   line-height: 2;
+  font-family: 'Poppins', sans-serif;
 `
