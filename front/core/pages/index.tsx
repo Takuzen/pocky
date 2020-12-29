@@ -2,22 +2,7 @@ import Layout from '../components/Layout'
 import styled from 'styled-components'
 import Image from 'next/image'
 import Link from 'next/link'
-
-const AddressMap = () => {
-  return (
-    <div className="google-map-code">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.92161076721!2d139.7088684!3d35.6713284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xebee27411fb235b0!2sPocky%20SALON%20%26%20STORE!5e0!3m2!1sen!2sjp!4v1608901241643!5m2!1sen!2sjp"
-        width="600"
-        height="450"
-        style={{ border: 0 }}
-        aria-hidden="false"
-      ></iframe>
-    </div>
-  )
-}
-
-export { AddressMap }
+import MediaQuery from 'react-responsive'
 
 const IndexPage = () => (
   <Layout title="Pocky SALON & STORE">
@@ -25,40 +10,76 @@ const IndexPage = () => (
       <TopSection>
         <Menu>
           <Reservation>
-            <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
-              <Image
-                src="/icons/cut-outline.svg"
-                alt="cut-icon"
-                width={30}
-                height={30}
-              ></Image>
-            </Link>
+            <MediaQuery maxDeviceWidth={768}>
+              <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
+                <Image
+                  src="/icons/cut-outline.svg"
+                  alt="cut-icon"
+                  width={20}
+                  height={20}
+                ></Image>
+              </Link>
+            </MediaQuery>
+            <MediaQuery minDeviceWidth={768}>
+              <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
+                <Image
+                  src="/icons/cut-outline.svg"
+                  alt="cut-icon"
+                  width={30}
+                  height={30}
+                ></Image>
+              </Link>
+            </MediaQuery>
             <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
               <p>Reservation</p>
             </Link>
           </Reservation>
           <OnlineStore>
-            <Link href="https://pocky2020.base.ec/">
-              <Image
-                src="/icons/store-icon.svg"
-                alt="store-icon"
-                width={30}
-                height={30}
-              ></Image>
-            </Link>
+            <MediaQuery maxDeviceWidth={768}>
+              <Link href="https://pocky2020.base.ec/">
+                <Image
+                  src="/icons/store-icon.svg"
+                  alt="store-icon"
+                  width={20}
+                  height={20}
+                ></Image>
+              </Link>
+            </MediaQuery>
+            <MediaQuery minDeviceWidth={768}>
+              <Link href="https://pocky2020.base.ec/">
+                <Image
+                  src="/icons/store-icon.svg"
+                  alt="store-icon"
+                  width={30}
+                  height={30}
+                ></Image>
+              </Link>
+            </MediaQuery>
             <Link href="https://pocky2020.base.ec/">
               <p>Online Store</p>
             </Link>
           </OnlineStore>
           <Instagram>
-            <Link href="https://www.instagram.com/denimyarou/?hl=en">
-              <Image
-                src="/icons/logo-instagram.svg"
-                alt="instagram-icon"
-                width={30}
-                height={30}
-              ></Image>
-            </Link>
+            <MediaQuery maxDeviceWidth={768}>
+              <Link href="https://www.instagram.com/denimyarou/?hl=en">
+                <Image
+                  src="/icons/logo-instagram.svg"
+                  alt="instagram-icon"
+                  width={20}
+                  height={20}
+                ></Image>
+              </Link>
+            </MediaQuery>
+            <MediaQuery minDeviceWidth={768}>
+              <Link href="https://www.instagram.com/denimyarou/?hl=en">
+                <Image
+                  src="/icons/logo-instagram.svg"
+                  alt="instagram-icon"
+                  width={30}
+                  height={30}
+                ></Image>
+              </Link>
+            </MediaQuery>
             <Link href="https://www.instagram.com/denimyarou/?hl=en">
               <p>Instagram</p>
             </Link>
@@ -98,11 +119,17 @@ const IndexPage = () => (
           <Image
             src="/images/welcome-resized.jpg"
             alt="welcome-image"
-            width={700}
+            width={600}
             height={300}
           ></Image>
         </WelcomeImage>
-        <AddressMap></AddressMap>
+        <Image
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.92161076721!2d139.7088684!3d35.6713284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xebee27411fb235b0!2sPocky%20SALON%20%26%20STORE!5e0!3m2!1sen!2sjp!4v1608901241643!5m2!1sen!2sjp"
+          alt="google-map"
+          width={600}
+          height={450}
+        ></Image>
+
         <Info>
           〒150-0001
           <br />
@@ -134,7 +161,7 @@ const TopSection = styled.section`
 
 const Menu = styled.div`
   display: grid;
-  grid-template-columns: [tate0] 90% [tate1] 10% [tate2];
+  grid-template-columns: [tate0] 1fr [tate1] 1fr [tate2];
   grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr;
   justify-items: center;
   align-items: center;
