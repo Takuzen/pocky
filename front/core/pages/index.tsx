@@ -283,7 +283,12 @@ const Logo = styled.div`
   justify-items: center;
 `
 
-const PockyLogo = styled.image``
+const PockyLogo = styled.image`
+  position: relative;
+  top: -30px;
+
+  ${Media.lessThan('medium')``}
+`
 
 const ChevronIcon = styled.image`
   ${Media.lessThan('medium')`
@@ -308,7 +313,12 @@ const PhotoSection = styled.section`
   `}
 `
 
-const PhotoWrapper = styled.div``
+const PhotoWrapper = styled.div`
+  ${Media.lessThan('medium')`
+    position: relative;
+    top: -30px;
+  `}
+`
 
 const MapSection = styled.section`
   height: 100%;
@@ -324,5 +334,5 @@ const Info = styled.p`
   text-align: center;
   line-height: 2;
   font-family: 'Poppins', sans-serif;
-  margin-top: 30px;
+  margin-top: 60px;
 `
