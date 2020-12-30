@@ -206,7 +206,7 @@ const Menu = styled.div`
     display: grid;
     grid-template-columns: [tate0] 1fr [tate1] 1fr [tate2];
     grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr;
-    justify-items: center;
+    justify-items: end;
     align-items: center;
     margin-right: 5px
   `}
@@ -312,8 +312,8 @@ const MapSection = styled.section`
   align-items: center;
   margin-bottom: 30px;
 `
-const WelcomeImage = styled.div`
-  object-fit: contain;
+const WelcomeImage = styled.image`
+  object-fit: scale-down;
 `
 
 const Info = styled.p`
