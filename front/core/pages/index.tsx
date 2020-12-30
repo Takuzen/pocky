@@ -151,6 +151,7 @@ const IndexPage = () => (
           alt="welcome-image"
           width={500}
           height={250}
+          objectFit="scale-down"
         ></Image>
         <MediaQuery maxDeviceWidth={767}>
           <AddressMapSmall />
