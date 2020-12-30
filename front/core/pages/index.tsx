@@ -11,76 +11,82 @@ const IndexPage = () => (
       <TopSection>
         <Menu>
           <Reservation>
-            <MediaQuery maxDeviceWidth={768}>
-              <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
-                <Image
-                  src="/icons/cut-outline.svg"
-                  alt="cut-icon"
-                  width={20}
-                  height={20}
-                ></Image>
-              </Link>
-            </MediaQuery>
-            <MediaQuery minDeviceWidth={768}>
-              <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
-                <Image
-                  src="/icons/cut-outline.svg"
-                  alt="cut-icon"
-                  width={30}
-                  height={30}
-                ></Image>
-              </Link>
-            </MediaQuery>
+            <ReservationIcon>
+              <MediaQuery maxDeviceWidth={768}>
+                <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
+                  <Image
+                    src="/icons/cut-outline.svg"
+                    alt="cut-icon"
+                    width={20}
+                    height={20}
+                  ></Image>
+                </Link>
+              </MediaQuery>
+              <MediaQuery minDeviceWidth={768}>
+                <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
+                  <Image
+                    src="/icons/cut-outline.svg"
+                    alt="cut-icon"
+                    width={30}
+                    height={30}
+                  ></Image>
+                </Link>
+              </MediaQuery>
+            </ReservationIcon>
             <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
               <p>Reservation</p>
             </Link>
           </Reservation>
           <OnlineStore>
-            <MediaQuery maxDeviceWidth={768}>
-              <Link href="https://pocky2020.base.ec/">
-                <Image
-                  src="/icons/store-icon.svg"
-                  alt="store-icon"
-                  width={20}
-                  height={20}
-                ></Image>
-              </Link>
-            </MediaQuery>
-            <MediaQuery minDeviceWidth={768}>
-              <Link href="https://pocky2020.base.ec/">
-                <Image
-                  src="/icons/store-icon.svg"
-                  alt="store-icon"
-                  width={30}
-                  height={30}
-                ></Image>
-              </Link>
-            </MediaQuery>
+            <OnlineStoreIcon>
+              <MediaQuery maxDeviceWidth={768}>
+                <Link href="https://pocky2020.base.ec/">
+                  <Image
+                    src="/icons/store-icon.svg"
+                    alt="store-icon"
+                    width={20}
+                    height={20}
+                  ></Image>
+                </Link>
+              </MediaQuery>
+              <MediaQuery minDeviceWidth={768}>
+                <Link href="https://pocky2020.base.ec/">
+                  <Image
+                    src="/icons/store-icon.svg"
+                    alt="store-icon"
+                    width={30}
+                    height={30}
+                  ></Image>
+                </Link>
+              </MediaQuery>
+            </OnlineStoreIcon>
             <Link href="https://pocky2020.base.ec/">
               <p>Online Store</p>
             </Link>
           </OnlineStore>
           <Instagram>
-            <MediaQuery maxDeviceWidth={768}>
-              <Link href="https://www.instagram.com/denimyarou/?hl=en">
-                <Image
-                  src="/icons/logo-instagram.svg"
-                  alt="instagram-icon"
-                  width={20}
-                  height={20}
-                ></Image>
-              </Link>
-            </MediaQuery>
-            <MediaQuery minDeviceWidth={768}>
-              <Link href="https://www.instagram.com/denimyarou/?hl=en">
-                <Image
-                  src="/icons/logo-instagram.svg"
-                  alt="instagram-icon"
-                  width={30}
-                  height={30}
-                ></Image>
-              </Link>
-            </MediaQuery>
+            <InstagramIcon>
+              <MediaQuery maxDeviceWidth={768}>
+                <Link href="https://www.instagram.com/denimyarou/?hl=en">
+                  <Image
+                    src="/icons/logo-instagram.svg"
+                    alt="instagram-icon"
+                    width={20}
+                    height={20}
+                  ></Image>
+                </Link>
+              </MediaQuery>
+              <MediaQuery minDeviceWidth={768}>
+                <Link href="https://www.instagram.com/denimyarou/?hl=en">
+                  <Image
+                    src="/icons/logo-instagram.svg"
+                    alt="instagram-icon"
+                    width={30}
+                    height={30}
+                  ></Image>
+                </Link>
+              </MediaQuery>
+            </InstagramIcon>
             <Link href="https://www.instagram.com/denimyarou/?hl=en">
               <p>Instagram</p>
             </Link>
@@ -185,15 +191,17 @@ const Reservation = styled.div`
   gap: 5px;
   font-family: 'Poppins', sans-serif;
 
-  ${Media.lessThan('medium')`
-    margin-right: 10px;
-  `}
-
   :hover {
     opacity: 0.6;
     cursor: pointer;
     transition: 0.3s;
   }
+`
+
+const ReservationIcon = styled.image`
+  ${Media.lessThan('medium')`
+    margin-right: 10px;
+  `}
 `
 
 const OnlineStore = styled.div`
@@ -205,15 +213,17 @@ const OnlineStore = styled.div`
   gap: 5px;
   font-family: 'Poppins', sans-serif;
 
-  ${Media.lessThan('medium')`
-    margin-right: 10px;
-  `}
-
   :hover {
     opacity: 0.6;
     cursor: pointer;
     transition: 0.3s;
   }
+`
+
+const OnlineStoreIcon = styled.image`
+  ${Media.lessThan('medium')`
+    margin-right: 10px;
+  `}
 `
 
 const Instagram = styled.div`
@@ -225,15 +235,17 @@ const Instagram = styled.div`
   gap: 5px;
   font-family: 'Poppins', sans-serif;
 
-  ${Media.lessThan('medium')`
-    margin-right: 10px;
-  `}
-
   :hover {
     opacity: 0.6;
     cursor: pointer;
     transition: 0.3s;
   }
+`
+
+const InstagramIcon = styled.image`
+  ${Media.lessThan('medium')`
+    margin-right: 10px;
+  `}
 `
 
 const Logo = styled.div`
@@ -246,7 +258,7 @@ const PockyLogo = styled.image``
 
 const ChevronIcon = styled.image`
   position: relative;
-  top: -30px;
+  top: -50px;
 `
 
 const PhotoSection = styled.section`
@@ -257,8 +269,8 @@ const PhotoSection = styled.section`
   align-items: center;
 
   ${Media.lessThan('medium')`
-    height: 100vh;
-    width: 50vw;
+    height: 50vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
