@@ -36,7 +36,7 @@ const IndexPage = () => (
         <Menu>
           <Reservation>
             <ReservationIcon>
-              <MediaQuery maxDeviceWidth={768}>
+              <MediaQuery maxDeviceWidth={767}>
                 <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
                   <Image
                     src="/icons/cut-outline.svg"
@@ -63,7 +63,7 @@ const IndexPage = () => (
           </Reservation>
           <OnlineStore>
             <OnlineStoreIcon>
-              <MediaQuery maxDeviceWidth={768}>
+              <MediaQuery maxDeviceWidth={767}>
                 <Link href="https://pocky2020.base.ec/">
                   <Image
                     src="/icons/store-icon.svg"
@@ -90,7 +90,7 @@ const IndexPage = () => (
           </OnlineStore>
           <Instagram>
             <InstagramIcon>
-              <MediaQuery maxDeviceWidth={768}>
+              <MediaQuery maxDeviceWidth={767}>
                 <Link href="https://www.instagram.com/denimyarou/?hl=en">
                   <Image
                     src="/icons/logo-instagram.svg"
@@ -154,7 +154,7 @@ const IndexPage = () => (
             height={250}
           ></Image>
         </WelcomeImage>
-        <MediaQuery maxDeviceWidth={768}>
+        <MediaQuery maxDeviceWidth={767}>
           <AddressMapSmall />
         </MediaQuery>
         <MediaQuery minDeviceWidth={768}>
@@ -208,6 +208,7 @@ const Menu = styled.div`
     grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr;
     justify-items: center;
     align-items: center;
+    margin-right: 5px
   `}
 `
 
@@ -298,6 +299,14 @@ const PhotoSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${Media.lessThan('medium')`
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `}
 `
 
 const PhotoWrapper = styled.div``
