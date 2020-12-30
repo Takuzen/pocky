@@ -299,14 +299,6 @@ const PhotoSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  ${Media.lessThan('medium')`
-    height: 80vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `}
 `
 
 const PhotoWrapper = styled.div``
@@ -321,7 +313,7 @@ const MapSection = styled.section`
   margin-bottom: 30px;
 `
 const WelcomeImage = styled.div`
-  object-fit: scale-down;
+  object-fit: contain;
 `
 
 const Info = styled.p`
