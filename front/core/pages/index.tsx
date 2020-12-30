@@ -300,7 +300,7 @@ const PhotoSection = styled.section`
   align-items: center;
 
   ${Media.lessThan('medium')`
-    height: 80vh;
+    height: 50vh;
     width: 100vw;
     display: flex;
     justify-content: center;
