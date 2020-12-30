@@ -61,33 +61,6 @@ const IndexPage = () => (
               <p>Reservation</p>
             </Link>
           </Reservation>
-          <OnlineStore>
-            <OnlineStoreIcon>
-              <MediaQuery maxDeviceWidth={767}>
-                <Link href="https://pocky2020.base.ec/">
-                  <Image
-                    src="/icons/store-icon.svg"
-                    alt="store-icon"
-                    width={20}
-                    height={20}
-                  ></Image>
-                </Link>
-              </MediaQuery>
-              <MediaQuery minDeviceWidth={768}>
-                <Link href="https://pocky2020.base.ec/">
-                  <Image
-                    src="/icons/store-icon.svg"
-                    alt="store-icon"
-                    width={30}
-                    height={30}
-                  ></Image>
-                </Link>
-              </MediaQuery>
-            </OnlineStoreIcon>
-            <Link href="https://pocky2020.base.ec/">
-              <p>Online Store</p>
-            </Link>
-          </OnlineStore>
           <Instagram>
             <InstagramIcon>
               <MediaQuery maxDeviceWidth={767}>
@@ -115,6 +88,33 @@ const IndexPage = () => (
               <p>Instagram</p>
             </Link>
           </Instagram>
+          <OnlineStore>
+            <OnlineStoreIcon>
+              <MediaQuery maxDeviceWidth={767}>
+                <Link href="https://pocky2020.base.ec/">
+                  <Image
+                    src="/icons/store-icon.svg"
+                    alt="store-icon"
+                    width={20}
+                    height={20}
+                  ></Image>
+                </Link>
+              </MediaQuery>
+              <MediaQuery minDeviceWidth={768}>
+                <Link href="https://pocky2020.base.ec/">
+                  <Image
+                    src="/icons/store-icon.svg"
+                    alt="store-icon"
+                    width={30}
+                    height={30}
+                  ></Image>
+                </Link>
+              </MediaQuery>
+            </OnlineStoreIcon>
+            <Link href="https://pocky2020.base.ec/">
+              <p>Online Store</p>
+            </Link>
+          </OnlineStore>
         </Menu>
         <Logo>
           <PockyLogo>
@@ -300,7 +300,7 @@ const PhotoSection = styled.section`
   align-items: center;
 
   ${Media.lessThan('medium')`
-    height: 100vh;
+    height: 60vh;
     width: 100vw;
     display: flex;
     justify-content: center;
