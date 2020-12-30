@@ -321,7 +321,7 @@ const MapSection = styled.section`
   margin-bottom: 30px;
 `
 const WelcomeImage = styled.div`
-  object-fit: fill;
+  object-fit: scale-down;
 `
 
 const Info = styled.p`
