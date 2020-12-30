@@ -141,7 +141,11 @@ const IndexPage = () => (
           <br />
           東京都渋谷区神宮前3丁目27-14
           <br />
-          Owner Hiromu Yamada（山田大夢）
+          Owner
+          <br />
+          Hiromu Yamada
+          <br />
+          山田 大夢
           <br />
           denimyarou@gmail.com
           <br />
@@ -200,7 +204,7 @@ const Reservation = styled.div`
 
 const ReservationIcon = styled.image`
   ${Media.lessThan('medium')`
-    margin-right: 10px;
+    margin-right: 5px;
   `}
 `
 
@@ -222,7 +226,7 @@ const OnlineStore = styled.div`
 
 const OnlineStoreIcon = styled.image`
   ${Media.lessThan('medium')`
-    margin-right: 10px;
+    margin-right: 5px;
   `}
 `
 
@@ -244,7 +248,7 @@ const Instagram = styled.div`
 
 const InstagramIcon = styled.image`
   ${Media.lessThan('medium')`
-    margin-right: 10px;
+    margin-right: 5px;
   `}
 `
 
@@ -258,7 +262,7 @@ const PockyLogo = styled.image``
 
 const ChevronIcon = styled.image`
   position: relative;
-  top: -50px;
+  top: -60px;
 `
 
 const PhotoSection = styled.section`
@@ -269,7 +273,7 @@ const PhotoSection = styled.section`
   align-items: center;
 
   ${Media.lessThan('medium')`
-    height: 50vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     justify-content: center;
