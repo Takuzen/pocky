@@ -287,7 +287,10 @@ const PockyLogo = styled.image`
   position: relative;
   top: -30px;
 
-  ${Media.lessThan('medium')``}
+  ${Media.lessThan('medium')`
+    position: relative;
+    top: 0;
+  `}
 `
 
 const ChevronIcon = styled.image`
@@ -305,7 +308,7 @@ const PhotoSection = styled.section`
   align-items: center;
 
   ${Media.lessThan('medium')`
-    height: 60vh;
+    height: 50vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -334,5 +337,5 @@ const Info = styled.p`
   text-align: center;
   line-height: 2;
   font-family: 'Poppins', sans-serif;
-  margin-top: 60px;
+  margin-top: 40px;
 `
