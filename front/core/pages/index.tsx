@@ -5,7 +5,7 @@ import Link from 'next/link'
 import MediaQuery from 'react-responsive'
 import Media from 'styled-media-query'
 
-const AddressMap = () => {
+const AddressMapMedium = () => {
   return (
     <div className="google-map-code">
       <iframe
@@ -17,7 +17,17 @@ const AddressMap = () => {
   )
 }
 
-export { AddressMap }
+const AddressMapSmall = () => {
+  return (
+    <div className="google-map-code">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2304034959584!2d139.70667971525262!3d35.67132838019654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d03cf22d88f%3A0xebee27411fb235b0!2sPocky%20SALON%20%26%20STORE!5e0!3m2!1sen!2sjp!4v1609301088764!5m2!1sen!2sjp"
+        width="320"
+        height="222"
+      ></iframe>
+    </div>
+  )
+}
 
 const IndexPage = () => (
   <Layout title="Pocky SALON & STORE">
@@ -144,7 +154,12 @@ const IndexPage = () => (
             height={250}
           ></Image>
         </WelcomeImage>
-        <AddressMap />
+        <MediaQuery maxDeviceWidth={768}>
+          <AddressMapSmall />
+        </MediaQuery>
+        <MediaQuery minDeviceWidth={768}>
+          <AddressMapMedium />
+        </MediaQuery>
         <Info>
           〒150-0001
           <br />
@@ -204,7 +219,6 @@ const Reservation = styled.div`
   align-items: center;
   gap: 5px;
   font-family: 'Poppins', sans-serif;
-  text-align: center;
 
   :hover {
     opacity: 0.6;
@@ -227,7 +241,6 @@ const OnlineStore = styled.div`
   align-items: center;
   gap: 5px;
   font-family: 'Poppins', sans-serif;
-  text-align: center;
 
   :hover {
     opacity: 0.6;
@@ -250,7 +263,6 @@ const Instagram = styled.div`
   align-items: center;
   gap: 5px;
   font-family: 'Poppins', sans-serif;
-  text-align: center;
 
   :hover {
     opacity: 0.6;
@@ -297,7 +309,6 @@ const MapSection = styled.section`
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  gap: 20px;
   margin-bottom: 30px;
 `
 const WelcomeImage = styled.div`
@@ -308,8 +319,5 @@ const Info = styled.p`
   text-align: center;
   line-height: 2;
   font-family: 'Poppins', sans-serif;
-
-  ${Media.lessThan('medium')`
-    margin-top: 30px;
-  `}
+  margin-top: 30px;
 `
