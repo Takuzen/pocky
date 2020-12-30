@@ -161,7 +161,7 @@ const TopSection = styled.section`
 
 const Menu = styled.div`
   display: grid;
-  grid-template-columns: [tate0] 80% [tate1] 20% [tate2];
+  grid-template-columns: [tate0] 82% [tate1] 18% [tate2];
   grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr;
   justify-items: center;
   align-items: center;
@@ -186,7 +186,7 @@ const Reservation = styled.div`
   font-family: 'Poppins', sans-serif;
 
   ${Media.lessThan('medium')`
-    gap: 10px;
+    margin-right: 10px;
   `}
 
   :hover {
@@ -206,7 +206,7 @@ const OnlineStore = styled.div`
   font-family: 'Poppins', sans-serif;
 
   ${Media.lessThan('medium')`
-    gap: 10px;
+    margin-right: 10px;
   `}
 
   :hover {
@@ -226,7 +226,7 @@ const Instagram = styled.div`
   font-family: 'Poppins', sans-serif;
 
   ${Media.lessThan('medium')`
-    gap: 10px;
+    margin-right: 10px;
   `}
 
   :hover {
@@ -244,7 +244,10 @@ const Logo = styled.div`
 
 const PockyLogo = styled.image``
 
-const ChevronIcon = styled.image``
+const ChevronIcon = styled.image`
+  position: relative;
+  top: -30px;
+`
 
 const PhotoSection = styled.section`
   height: 100vh;
@@ -252,6 +255,14 @@ const PhotoSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${Media.lessThan('medium')`
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `}
 `
 
 const PhotoWrapper = styled.div``
@@ -274,4 +285,8 @@ const Info = styled.p`
   text-align: center;
   line-height: 2;
   font-family: 'Poppins', sans-serif;
+
+  ${Media.lessThan('medium')`
+    margin-top: 30px;
+  `}
 `
