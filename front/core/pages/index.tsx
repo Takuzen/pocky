@@ -5,6 +5,20 @@ import Link from 'next/link'
 import MediaQuery from 'react-responsive'
 import Media from 'styled-media-query'
 
+const AddressMap = () => {
+  return (
+    <div className="google-map-code">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2304034959584!2d139.70667971525262!3d35.67132838019654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d03cf22d88f%3A0xebee27411fb235b0!2sPocky%20SALON%20%26%20STORE!5e0!3m2!1sen!2sjp!4v1609301088764!5m2!1sen!2sjp"
+        width="600"
+        height="450"
+      ></iframe>
+    </div>
+  )
+}
+
+export { AddressMap }
+
 const IndexPage = () => (
   <Layout title="Pocky SALON & STORE">
     <Wrapper>
@@ -126,16 +140,11 @@ const IndexPage = () => (
           <Image
             src="/images/welcome-resized.jpg"
             alt="welcome-image"
-            width={600}
-            height={300}
+            width={500}
+            height={250}
           ></Image>
         </WelcomeImage>
-        <Image
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.92161076721!2d139.7088684!3d35.6713284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xebee27411fb235b0!2sPocky%20SALON%20%26%20STORE!5e0!3m2!1sen!2sjp!4v1608901241643!5m2!1sen!2sjp"
-          alt="google-map"
-          width={600}
-          height={450}
-        ></Image>
+        <AddressMap />
         <Info>
           〒150-0001
           <br />
@@ -173,8 +182,9 @@ const Menu = styled.div`
   display: grid;
   grid-template-columns: [tate0] 82% [tate1] 18% [tate2];
   grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr;
-  justify-items: center;
+  justify-items: end;
   align-items: center;
+  margin-right: 30px;
 
   ${Media.lessThan('medium')`
     /* screen width is less than 768px (medium) */
@@ -194,6 +204,7 @@ const Reservation = styled.div`
   align-items: center;
   gap: 5px;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 
   :hover {
     opacity: 0.6;
@@ -216,6 +227,7 @@ const OnlineStore = styled.div`
   align-items: center;
   gap: 5px;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 
   :hover {
     opacity: 0.6;
@@ -238,6 +250,7 @@ const Instagram = styled.div`
   align-items: center;
   gap: 5px;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 
   :hover {
     opacity: 0.6;
@@ -261,8 +274,10 @@ const Logo = styled.div`
 const PockyLogo = styled.image``
 
 const ChevronIcon = styled.image`
-  position: relative;
-  top: -60px;
+  ${Media.lessThan('medium')`
+    position: relative;
+    top: -60px;
+  `}
 `
 
 const PhotoSection = styled.section`
@@ -271,14 +286,6 @@ const PhotoSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  ${Media.lessThan('medium')`
-    height: 80vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `}
 `
 
 const PhotoWrapper = styled.div``
