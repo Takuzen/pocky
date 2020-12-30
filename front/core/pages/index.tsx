@@ -298,6 +298,14 @@ const PhotoSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${Media.lessThan('medium')`
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `}
 `
 
 const PhotoWrapper = styled.div``
