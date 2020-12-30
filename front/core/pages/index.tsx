@@ -146,14 +146,12 @@ const IndexPage = () => (
         </PhotoWrapper>
       </PhotoSection>
       <MapSection>
-        <WelcomeImage>
-          <Image
-            src="/images/welcome-resized.jpg"
-            alt="welcome-image"
-            width={500}
-            height={250}
-          ></Image>
-        </WelcomeImage>
+        <Image
+          src="/images/welcome-resized.jpg"
+          alt="welcome-image"
+          width={500}
+          height={250}
+        ></Image>
         <MediaQuery maxDeviceWidth={767}>
           <AddressMapSmall />
         </MediaQuery>
@@ -208,7 +206,7 @@ const Menu = styled.div`
     grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr;
     justify-items: end;
     align-items: center;
-    margin-right: 5px
+    margin-right: 10px
   `}
 `
 
@@ -311,9 +309,6 @@ const MapSection = styled.section`
   justify-items: center;
   align-items: center;
   margin-bottom: 30px;
-`
-const WelcomeImage = styled.image`
-  object-fit: scale-down;
 `
 
 const Info = styled.p`
