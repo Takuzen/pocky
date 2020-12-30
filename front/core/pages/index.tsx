@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Image from 'next/image'
 import Link from 'next/link'
 import MediaQuery from 'react-responsive'
+import Media from 'styled-media-query'
 
 const IndexPage = () => (
   <Layout title="Pocky SALON & STORE">
@@ -129,7 +130,6 @@ const IndexPage = () => (
           width={600}
           height={450}
         ></Image>
-
         <Info>
           〒150-0001
           <br />
@@ -161,10 +161,19 @@ const TopSection = styled.section`
 
 const Menu = styled.div`
   display: grid;
-  grid-template-columns: [tate0] 1fr [tate1] 1fr [tate2];
+  grid-template-columns: [tate0] 80% [tate1] 20% [tate2];
   grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr;
   justify-items: center;
   align-items: center;
+
+  ${Media.lessThan('medium')`
+    /* screen width is less than 768px (medium) */
+    display: grid;
+    grid-template-columns: [tate0] 1fr [tate1] 1fr [tate2];
+    grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr;
+    justify-items: center;
+    align-items: center;
+  `}
 `
 
 const Reservation = styled.div`
@@ -175,6 +184,10 @@ const Reservation = styled.div`
   align-items: center;
   gap: 5px;
   font-family: 'Poppins', sans-serif;
+
+  ${Media.lessThan('medium')`
+    gap: 10px;
+  `}
 
   :hover {
     opacity: 0.6;
@@ -192,6 +205,10 @@ const OnlineStore = styled.div`
   gap: 5px;
   font-family: 'Poppins', sans-serif;
 
+  ${Media.lessThan('medium')`
+    gap: 10px;
+  `}
+
   :hover {
     opacity: 0.6;
     cursor: pointer;
@@ -207,6 +224,10 @@ const Instagram = styled.div`
   align-items: center;
   gap: 5px;
   font-family: 'Poppins', sans-serif;
+
+  ${Media.lessThan('medium')`
+    gap: 10px;
+  `}
 
   :hover {
     opacity: 0.6;
