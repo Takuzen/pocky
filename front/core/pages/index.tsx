@@ -307,13 +307,6 @@ const PhotoSection = styled.section`
   justify-content: center;
   align-items: center;
 
-  ${Media.lessThan('medium')`
-    height: 59vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;`}
-
   ${Media.lessThan('small')`
     height: 35vh;
     width: 100vw;
@@ -324,20 +317,13 @@ const PhotoSection = styled.section`
 `
 
 const WelcomeSection = styled.section`
-  height: 43vh;
+  height: 33vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 
-  ${Media.lessThan('medium')`
-    height: 28vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  `}
-
   ${Media.lessThan('small')`
-    height: 28vh;
+    height: 27vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
