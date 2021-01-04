@@ -139,3 +139,10 @@ a {
   color: black;
   text-decoration: none;
 }
+.welcome-msg {
+  top: -12vh !important;
+
+  @media screen and (min-width: 769) {
+    top: -3vh !important;
+  }
+}
