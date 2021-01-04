@@ -308,7 +308,7 @@ const PhotoSection = styled.section`
   align-items: center;
 
   ${Media.lessThan('medium')`
-    height: 50vh;
+    height: 35vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -323,7 +323,7 @@ const WelcomeSection = styled.section`
   align-items: flex-start;
 
   ${Media.lessThan('medium')`
-    height: 20vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
