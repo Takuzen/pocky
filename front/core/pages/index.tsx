@@ -147,7 +147,7 @@ const IndexPage = () => (
       </PhotoSection>
       <MapSection>
         <Image
-          src="/images/welcome-resized.jpg"
+          src="/images/welcome.jpg"
           alt="welcome-image"
           width={500}
           height={250}
