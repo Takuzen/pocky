@@ -149,7 +149,7 @@ const IndexPage = () => (
         <Image
           src="/images/welcome.jpg"
           alt="welcome-image"
-          width={500}
+          width={470}
           height={250}
           objectFit="cover"
         ></Image>
@@ -303,7 +303,7 @@ const ChevronIcon = styled.image`
 `
 
 const PhotoSection = styled.section`
-  height: 100vh;
+  height: 67vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -326,7 +326,10 @@ const PhotoWrapper = styled.div`
 `
 
 const WelcomeSection = styled.section`
-  height: 20vh;
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 `
 
 const MapSection = styled.section`
