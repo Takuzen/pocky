@@ -152,7 +152,7 @@ const IndexPage = () => (
             alt="welcome-image"
             width={500}
             height={250}
-            objectFit="contain"
+            objectFit="cover"
           ></Image>
         </WelcomeMsgWrapper>
         <MediaQuery maxDeviceWidth={767}>
@@ -327,6 +327,7 @@ const PhotoWrapper = styled.div`
 
 const WelcomeMsgWrapper = styled.div`
   ${Media.lessThan('medium')`
+    top: -11vh;
   `}
 `
 
