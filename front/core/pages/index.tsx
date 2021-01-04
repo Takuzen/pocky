@@ -323,7 +323,7 @@ const WelcomeSection = styled.section`
   align-items: flex-start;
 
   ${Media.lessThan('small')`
-    height: 27vh;
+    height: 26vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
