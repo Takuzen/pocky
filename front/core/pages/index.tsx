@@ -330,6 +330,13 @@ const WelcomeSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
+  ${Media.lessThan('medium')`
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  `}
 `
 
 const MapSection = styled.section`
