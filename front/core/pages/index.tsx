@@ -317,13 +317,13 @@ const PhotoSection = styled.section`
 `
 
 const WelcomeSection = styled.section`
-  height: 33vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 
   ${Media.lessThan('medium')`
-    height: 25vh;
+    height: 28vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
