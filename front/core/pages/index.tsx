@@ -327,7 +327,7 @@ const PhotoWrapper = styled.div`
 
 const WelcomeMsgWrapper = styled.div`
   ${Media.lessThan('medium')`
-    top: -11vh;
+    top: -15vh;
   `}
 `
 
