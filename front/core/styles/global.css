@@ -140,9 +140,9 @@ a {
   text-decoration: none;
 }
 .welcome-msg {
-  top: -12vh !important;
+  top: -11vh !important;
 
-  @media screen and (min-width: 769) {
-    top: -3vh !important;
+  @media (min-width: 768) {
+    top: -13vh !important;
   }
 }
