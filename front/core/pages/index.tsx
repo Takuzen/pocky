@@ -146,13 +146,15 @@ const IndexPage = () => (
         </PhotoWrapper>
       </PhotoSection>
       <MapSection>
-        <Image
-          src="/images/welcome.jpg"
-          alt="welcome-image"
-          width={500}
-          height={250}
-          objectFit="contain"
-        ></Image>
+        <WelcomeMsgWrapper>
+          <Image
+            src="/images/welcome.jpg"
+            alt="welcome-image"
+            width={500}
+            height={250}
+            objectFit="contain"
+          ></Image>
+        </WelcomeMsgWrapper>
         <MediaQuery maxDeviceWidth={767}>
           <AddressMapSmall />
         </MediaQuery>
@@ -321,6 +323,11 @@ const PhotoWrapper = styled.div`
     position: relative;
     top: -30px;
   `}
+`
+
+const WelcomeMsgWrapper = styled.div`
+  position: absolute;
+  top: -11vh;
 `
 
 const MapSection = styled.section`
