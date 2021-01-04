@@ -136,14 +136,12 @@ const IndexPage = () => (
         </Logo>
       </TopSection>
       <PhotoSection>
-        <PhotoWrapper>
-          <Image
-            src="/images/front.JPG"
-            alt="front-image"
-            width={700}
-            height={500}
-          ></Image>
-        </PhotoWrapper>
+        <Image
+          src="/images/front.JPG"
+          alt="front-image"
+          width={700}
+          height={500}
+        ></Image>
       </PhotoSection>
       <WelcomeSection>
         <Image
@@ -315,13 +313,6 @@ const PhotoSection = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-  `}
-`
-
-const PhotoWrapper = styled.div`
-  ${Media.lessThan('medium')`
-    position: relative;
-    top: -30px;
   `}
 `
 
