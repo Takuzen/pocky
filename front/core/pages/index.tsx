@@ -326,8 +326,8 @@ const PhotoWrapper = styled.div`
 `
 
 const WelcomeMsgWrapper = styled.div`
-  position: absolute;
-  top: -11vh;
+  ${Media.lessThan('medium')`
+  `}
 `
 
 const MapSection = styled.section`
