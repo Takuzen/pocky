@@ -329,6 +329,7 @@ const WelcomeMsgWrapper = styled.div`
   top: -2vh;
 
   ${Media.lessThan('medium')`
+    margin-top: 0;
     top: -12vh;
   `}
 `
