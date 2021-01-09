@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import MediaQuery from 'react-responsive'
 import Media from 'styled-media-query'
+import ImageGallery from 'react-image-gallery'
 
 const AddressMapMedium = () => {
   return (
@@ -28,6 +29,13 @@ const AddressMapSmall = () => {
     </div>
   )
 }
+
+const images = [
+  {
+    original: '../public/images/front.JPG',
+    thumbnail: '../public/images/front.JPG',
+  },
+]
 
 const IndexPage = () => (
   <Layout title="Pocky SALON & STORE">
@@ -142,6 +150,7 @@ const IndexPage = () => (
           width={700}
           height={500}
         ></Image>
+        <ImageGallery items={images} />
       </PhotoSection>
       <WelcomeSection>
         <Image

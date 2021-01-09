@@ -1,6 +1,7 @@
 // import App from "next/app";
 import type { AppProps /*, AppContext */ } from 'next/app'
 import '../styles/global.css'
+import '../styles/gallery.scss'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
