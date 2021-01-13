@@ -373,6 +373,6 @@ const AwesomeSliderWrapper = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -60px;
+    top: -55px;
   `}
 `
