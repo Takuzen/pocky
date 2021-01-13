@@ -368,9 +368,11 @@ const AwesomeSliderWrapper = styled.div`
   align-items: center;
 
   ${Media.lessThan('small')`
-    width: 70vw;
+    width: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: -50px;
   `}
 `
