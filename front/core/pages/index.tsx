@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import MediaQuery from 'react-responsive'
 import Media from 'styled-media-query'
+import AwesomeSlider from 'react-awesome-slider'
+import 'react-awesome-slider/dist/styles.css'
 
 const AddressMapMedium = () => {
   return (
@@ -136,12 +138,24 @@ const IndexPage = () => (
         </Logo>
       </TopSection>
       <PhotoSection>
-        <Image
-          src="/images/front.JPG"
-          alt="front-image"
-          width={700}
-          height={500}
-        ></Image>
+        <AwesomeSliderWrapper>
+          <AwesomeSlider
+            media={[
+              {
+                source: 'images/front.JPG',
+              },
+              {
+                source: 'images/door-zoomed.JPG',
+              },
+              {
+                source: 'images/gallery.JPG',
+              },
+              {
+                source: 'images/shirt.JPG',
+              },
+            ]}
+          />
+        </AwesomeSliderWrapper>
       </PhotoSection>
       <WelcomeSection>
         <Image
@@ -345,4 +359,19 @@ const Info = styled.p`
   line-height: 2;
   font-family: 'Poppins', sans-serif;
   margin-top: 40px;
+`
+const AwesomeSliderWrapper = styled.div`
+  height: 67vh;
+  width: 55vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ${Media.lessThan('small')`
+    height: 35vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `}
 `
