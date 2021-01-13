@@ -140,6 +140,7 @@ const IndexPage = () => (
       <PhotoSection>
         <AwesomeSliderWrapper>
           <AwesomeSlider
+            organicArrows
             media={[
               {
                 source: 'images/front.JPG',
@@ -361,15 +362,13 @@ const Info = styled.p`
   margin-top: 40px;
 `
 const AwesomeSliderWrapper = styled.div`
-  height: 67vh;
-  width: 55vw;
+  width: 45vw;
   display: flex;
   justify-content: center;
   align-items: center;
 
   ${Media.lessThan('small')`
-    height: 35vh;
-    width: 100vw;
+    width: 70vw;
     display: flex;
     justify-content: center;
     align-items: center;
