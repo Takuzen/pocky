@@ -20,8 +20,8 @@ export default function AddressMapInfo() {
       {/* Address Information */}
       <div className="w-full max-w-lg md:max-w-3xl text-gray-700 text-[14px] md:text-[16px] font-futura tracking-wide leading-relaxed mt-6 text-left md:text-center">
         <p className="text-lg font-semibold">〒150-0001</p>
-        <p>東京都渋谷区神宮前3-27-15</p>
-        <p>ギャラット神宮前101</p>
+        <p>東京都渋谷区神宮前3-27-14</p>
+        <p>キャラット原宿101</p>
 
         {/* Embedded Google Map */}
         <div className="google-map-code w-full h-72 md:h-96 my-6">
@@ -39,7 +39,15 @@ export default function AddressMapInfo() {
         {/* Business Hours */}
         <p className="text-lg font-semibold mt-4">OPEN 11:00～21:00</p>
         <p className="text-lg font-semibold text-red-500">CLOSE / Wednesday</p>
+
+	<p className="text-lg font-semibold mt-4">〈 予約キャンセルについて 〉</p>
+        <p>止むを得ない理由を除いて、当日キャンセルの場合、予約メニュー料金の70%、無断キャンセルの場合、予約メニュー料金の100%を頂きます。予めご了承下さい。</p>
+	<p className="text-lg font-semibold mt-4">〈 商品の返品、交換、返金について 〉</p>
+        <p>ヴィンテージ、古屋の商品については、原則として返品、交換、返金は承っておりません。コンディション、サイズ等をお確かめの上、ご購入して頂きます様お願い致します。</p>
+
       </div>
+      
+       
 
       {/* Footer */}
       <footer className="mt-6 mb-6 text-gray-600 text-sm">

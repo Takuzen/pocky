@@ -1,16 +1,16 @@
 import Image from "next/image";
 
-export default function StylystOwner() {
+export default function StylistOwner() {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center px-4 py-8">
       <h1 className="text-2xl font-futura tracking-wide text-gray-800 mb-6">
-        Stylyst / Owner
+        Stylist / Owner
       </h1>
 
       <div className="w-full max-w-3xl">
         <Image
-          src="/stylyst-owner-image.jpg"
-          alt="Stylyst Owner"
+          src="/stylist-owner-image.jpg"
+          alt="Stylist Owner"
           width={800}
           height={600}
           className="w-full h-auto rounded-lg shadow-lg"

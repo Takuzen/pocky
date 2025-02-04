@@ -25,6 +25,13 @@ export default function Price() {
         <p>+カラー (追加メニュー／シャンプー&ブロー別) / 60分 9900円～</p>
         <p>+部分ストレートor部分パーマ (追加メニュー／シャンプー&ブロー別) / 30分 7700円～</p>
         <p>メンテナンスカット (刈り上げ、毛量調整、部分的なカット) / 30分 3300円</p>
+	<div className="mt-6 p-4 border-l-4 border-gray-400 bg-gray-100 text-gray-700 text-[15px]">
+          <p className="font-semibold">＊レングスチャージ＊</p>
+          <p>※カット以外のメニューが対象</p>
+          <p>長さ、毛量、デザインを踏まえた薬剤の使用量に応じて+1100円〜4400円</p>
+          <p>料金はカウンセリング時にお伝えさせて頂きます。</p>
+          <p>事前にある程度知りたい方は、InstagramのDM又はCONTACTに記載のメールアドレスからお問い合わせ下さい。</p>
+        </div>
       </div>
 
       <footer className="mt-6 mb-6 text-gray-600 text-sm">

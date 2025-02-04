@@ -21,7 +21,7 @@ export default function Home() {
         <a href="/price" className="hover:underline">PRICE</a>
         <a href="/about" className="hover:underline">ABOUT</a>
         <a href="https://pocky2020.base.ec/" className="hover:underline">ONLINE STORE</a>
-        <a href="/stylist-owner" className="hover:underline">STYLISTS / OWNER</a>
+        <a href="/stylist-owner" className="hover:underline">STYLIST / OWNER</a>
         <a href="/address-map-info" className="hover:underline">ADDRESS / MAP / INFO</a>
         <a href="/store-photo" className="hover:underline">STORE PHOTO</a>
         <a href="https://www.instagram.com/denimyarou/" className="hover:underline">INSTAGRAM</a>
