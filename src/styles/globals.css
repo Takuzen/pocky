@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Futura LT Book';
+  src: url('/fonts/FuturaLT-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Futura LT Book', Arial, Helvetica, sans-serif;
+}
