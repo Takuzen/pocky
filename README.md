@@ -1,1 +1,1 @@
-# pocky-2
+# Pocky SALON & STORE
